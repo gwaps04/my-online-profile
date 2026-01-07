@@ -1,0 +1,217 @@
+/* src/index.css */
+
+/* 1. Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* 2. Global Variables for consistency */
+:root {
+  --main-gradient: linear-gradient(90deg, #0f2027 0%, #203a43 50%, #2c5364 100%); /* Deep Teal/Blue */
+  --accent-color: #ffc107; /* Gold/Yellow for highlights */
+  --light-bg: #f8f9fa;
+  --dark-text: #333;
+}
+
+/* 3. Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents accidental horizontal scrollbars */
+}
+
+/* 4. Navbar Styling */
+.navbar-gradient {
+  background: var(--main-gradient);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Adds a subtle shadow */
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white !important;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important; /* Slightly transparent white */
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important; /* Gold on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* 5. Section Styling - Makes the page look "Designed" */
+section {
+  padding: 80px 0; /* Vertical spacing for all sections */
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #203a43; /* Dark teal headings */
+  margin-bottom: 20px;
+}
+
+/* 6. Specific Section Colors */
+
+/* Home/Hero Section */
+#home {
+  background: linear-gradient(135deg, #eef2f3 0%, #8e9eab 100%); /* Subtle gray-blue gradient */
+  min-height: 80vh; /* Takes up most of the screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* White Backgrounds for readability */
+#about, #experience, #contact {
+  background-color: #ffffff;
+}
+
+/* Light Gray Backgrounds for contrast */
+#skills, #projects {
+  background-color: #e9ecef;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Button Customization (optional overrides) */
+.btn-primary {
+  background-color: #203a43;
+  border-color: #203a43;
+}
+
+.btn-primary:hover {
+  background-color: #0f2027;
+}
+/* Hero Image Styling */
+.hero-img {
+  border-radius: 20px; /* Soft rounded corners */
+  box-shadow: 20px 20px 0px rgba(32, 58, 67, 0.1); /* Offset shadow for depth */
+  max-height: 500px; /* Prevents it from being too huge on big screens */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hero-img:hover {
+  transform: translateY(-5px); /* Subtle lift effect on hover */
+}
+/* src/index.css - Additions */
+
+/* Cool Gradient for About Section */
+.bg-gradient-cool {
+  /* A smooth transition from deep slate to cool blue */
+  background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+  color: #ffffff; /* White text for contrast */
+}
+
+/* About Image Styling */
+.about-img {
+  border-radius: 15px;
+  box-shadow: -15px 15px 0px rgba(255, 255, 255, 0.1); /* White shadow offset */
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Typography tweaks for this section */
+.about-text p {
+  font-size: 1.1rem;
+  font-weight: 300; /* Light version of Poppins for elegance */
+  opacity: 0.9;
+}
+
+.card-experience {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0; /* Hidden initially for animation */
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.card-experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Specific Gradient for Experience Headers */
+.bg-gradient-exp {
+  background: linear-gradient(135deg, #141E30 0%, #243B55 100%); /* Deep Professional Blue */
+  color: white;
+}
+
+/* Staggered Animation Delay for cards */
+.card-experience:nth-child(1) { animation-delay: 0.1s; }
+.card-experience:nth-child(2) { animation-delay: 0.2s; }
+.card-experience:nth-child(3) { animation-delay: 0.3s; }
+.card-experience:nth-child(4) { animation-delay: 0.4s; }
+.card-experience:nth-child(5) { animation-delay: 0.5s; }
+.card-experience:nth-child(6) { animation-delay: 0.6s; }
+.card-experience:nth-child(7) { animation-delay: 0.7s; }
+
+/* Keyframes for Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Optional: Make the icon rotate slightly on hover */
+.project-card:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.bg-gradient-footer {
+  /* Darker, professional footer gradient */
+  background: linear-gradient(180deg, #141E30 0%, #243B55 100%);
+  color: #ffffff;
+  border-top: 5px solid #ffc107; /* Gold accent line at the top */
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-link:hover {
+  color: #ffc107; /* Gold on hover */
+  padding-left: 5px; /* Subtle movement */
+}
+
+.footer-icon {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #ffc107;
+}
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
