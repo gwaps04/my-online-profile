@@ -4,6 +4,13 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
+      title: "AI & Automation Demos",
+      url: "https://macrotek-demos.vercel.app/",
+      role: "AI Developer & Automation Architect",
+      desc: "An interactive showcase featuring EduBot, a custom AI agent built to handle complex queries. Demonstrates advanced n8n workflows and Gemini AI integration within a modern web environment.",
+      icon: "bi-robot" // Using the robot icon for AI
+    },
+    {
       title: "Macrotek Digital Solutions",
       url: "https://www.macrotekdigitalsolutions.com",
       role: "Founder & Lead Developer",
@@ -42,6 +49,7 @@ const Projects = () => {
           <h5 className="text-uppercase text-secondary fw-bold">My Portfolio</h5>
           <h2 className="display-5 fw-bold text-dark">Sample Projects</h2>
           <div className="mx-auto mt-3" style={{width: '60px', height: '3px', backgroundColor: '#203a43'}}></div>
+          <p className="mt-3 text-muted">A collection of digital solutions, from full-stack platforms to advanced AI automation agents.</p>
         </div>
 
         <div className="row g-4">
@@ -74,7 +82,7 @@ const Projects = () => {
                         rel="noreferrer" 
                         className="btn btn-outline-dark btn-sm fw-bold align-self-start"
                       >
-                        Visit Website <i className="bi bi-box-arrow-up-right ms-1"></i>
+                        Click to Access <i className="bi bi-cpu ms-1"></i>
                       </a>
                     </div>
                   </div>
