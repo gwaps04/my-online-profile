@@ -29,11 +29,11 @@ const Hero = () => {
               Jason B. Millena
             </h1>
             <h3 className="h4 mb-4 text-secondary">
-              Virtual Operations & Web Specialist
+              Virtual Operations & Tech Specialist
             </h3>
             
             <p className="lead text-dark mb-4" style={{ lineHeight: '1.8' }}>
-              I am a passionate and detail-oriented Virtual Assistant and Logistics Professional with a proven track record in customer service, data entry, and operational efficiency. Skilled in customer engagement, logistics planning, remote coordination, and process streamlining.
+              Driven by a passion for operational excellence and tech innovation, I specialize in streamlining business operations through custom web development, smart workflow and AI automations.
             </p>
 
             {/* Call to Action Buttons */}

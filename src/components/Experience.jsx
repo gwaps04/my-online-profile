@@ -6,9 +6,9 @@ const Experience = () => {
   const experiences = [
     {
       company: "MACROTEK DIGITAL SOLUTIONS",
-      role: "Full Stack Developer",
+      role: "Full Stack Developer and Automation Tech Spc.",
       date: "June 2025 - Present",
-      description: "I build and optimize websites with a strong focus on process automation, creating systems that streamline workflows, automate repetitive tasks, and improve business efficiency through smart web-based solutions."
+      description: "I build and optimize business process with strong focus on ai agentic workflow automations, and Web Development."
     },
     {
       company: "SOLE PROPRIETORSHIP",
