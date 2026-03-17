@@ -52,7 +52,7 @@ const Contact = () => {
           <div className="col-lg-4">
             <h5 className="text-uppercase fw-bold text-warning mb-4">Downloadables</h5>
             <div className="d-flex flex-column">
-              <a href="https://drive.google.com/file/d/1VmuxaLoeyJbIF3XcBt4zGrSy9OGd2Ojc/view?usp=drive_link" target="_blank" rel="noreferrer" className="footer-link">
+              <a href="https://drive.google.com/file/d/1S6Lk5CCkq-sdT-GCMjYkW3jLuDgt6j-H/view?usp=drive_link" target="_blank" rel="noreferrer" className="footer-link">
                 <i className="bi bi-file-earmark-person footer-icon"></i> Download Resume
               </a>
               <a href="https://drive.google.com/file/d/1bPlUgYLpxCsZbtLjilHMeEzbKKM8HzNc/view?usp=drive_link" target="_blank" rel="noreferrer" className="footer-link">
